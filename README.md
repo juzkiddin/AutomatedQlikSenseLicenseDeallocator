@@ -1,4 +1,4 @@
-# AutomatedQlikSenseLicenseDeallocator
+# Automated QlikSense License Deallocator
 
 Python script for automated license deallocation in a Qlik Sense Enterprise environment.
 
