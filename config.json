@@ -1,0 +1,10 @@
+{
+    "url": "qliksense-dns.yourdomain.com",
+    "xrfkey": "NH9v1XFTeqzGXRbV",
+    "user_id": "john.doe",
+    "user_directory": "CORP",
+    "proxy_server": "https://<proxyserver_fqdn>:4243",
+    "client_cert": "client.pem",
+    "client_key": "client_key.pem",
+    "licenseType": "<licenseType>"
+}
