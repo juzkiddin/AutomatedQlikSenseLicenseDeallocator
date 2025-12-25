@@ -36,6 +36,7 @@ def generate_session(xrfkey,user_id,user_directory,proxy_server,client_cert,clie
     cert=(client_cert, client_key),
     verify=False
     )
+    logger.info(f"Session Created : {SESSION_ID}")
     return SESSION_ID
 
 def delete_session(xrfkey,proxy_server,client_cert,client_key,session_id):
@@ -277,8 +278,9 @@ def main():
     url = config.get("url")
     xrfkey = config.get("xrfkey")
     licensetype = config.get("licenseType") or config.get("license_type")
+    cookie_name = config.get("cookie_name")
     session_id = generate_session(xrfkey,user_id,user_directory,proxy_server,client_cert,client_key)
-    cookie = "X-Qlik-Session-sso-prod="+session_id
+    cookie = f"{cookie_name}={session_id}"
     if not url:
         logger.error("'url' not found in configuration file. Please check config.json.")
         return
@@ -352,5 +354,6 @@ def main():
     logger.info("Process Completed for current run")
     delete_session(xrfkey,proxy_server,client_cert,client_key,session_id)
     
+
 if __name__ == "__main__":
     main()
