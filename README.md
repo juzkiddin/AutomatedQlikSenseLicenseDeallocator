@@ -165,7 +165,8 @@ You can extend or modify the workflow to:
 
 ## Disclaimer
 
-This script modifies license assignments in Qlik Sense. Use with caution. Always validate behavior in a lower environment before running in production.
+*This script modifies license assignments in Qlik Sense. Use with caution. Always validate behavior in a lower environment before running in production.
+*Any Bug fix recommendation or optimisation to the code is welcome.
 
 ---
 
