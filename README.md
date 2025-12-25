@@ -72,7 +72,14 @@ Example structure:
   "cookie_name": "X-Qlik-Session-<vp_name>"
 }
 ```
-
+Please note the following point:
+1. **proxy_server**
+   * If your central is your proxy server you can give the qlik site url eg: "qliksense.yourdomain.com"
+   * If you have a dedicated proxy node give the server fqdn eg: "server1.ad.yourdomain.com"
+2. **cookie_name**
+   * The value of this can be found in the default virtual proxy setting in QMC under the name "Session cookie header name"
+3. **client_cert & client_key**
+   * You can find this in "C:\ProgramData\Qlik\Sense\Repository\Exported Certificates\.Local Certificates"
 ---
 
 ## Configuration Parameters Explained
