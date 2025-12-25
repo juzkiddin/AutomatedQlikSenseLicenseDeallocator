@@ -6,5 +6,6 @@
     "proxy_server": "https://<proxyserver_fqdn>:4243",
     "client_cert": "client.pem",
     "client_key": "client_key.pem",
-    "licenseType": "<licenseType>"
+    "licenseType": "<licenseType>",
+    "cookie_name" : "<session_cookie_header_name>"
 }
